@@ -13,7 +13,7 @@ export class CitySelectorComponent implements OnInit {
   selectedCity = 'moscow';
 
   @Output()
-  cityChanged: EventEmitter<string> =  new EventEmitter<string>();
+  cityChangeEvent: EventEmitter<string> =  new EventEmitter<string>();
 
   constructor() { }
 
@@ -32,6 +32,6 @@ export class CitySelectorComponent implements OnInit {
 
   processClickOnButton($event: Event) {
     console.log(this.selectedCity);
-    this.cityChanged.emit(this.selectedCity);
+    this.cityChangeEvent.emit(this.selectedCity);
   }
 }

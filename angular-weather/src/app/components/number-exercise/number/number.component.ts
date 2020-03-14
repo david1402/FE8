@@ -5,7 +5,11 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './number.component.html',
   styleUrls: ['./number.component.scss']
 })
+<<<<<<< Updated upstream
 export class NumberComponent implements OnInit {
+=======
+export class NumberComponent implements OnInit{
+>>>>>>> Stashed changes
 
   @Input()
   number: number;
@@ -15,6 +19,9 @@ export class NumberComponent implements OnInit {
   ngOnInit(): void {
   }
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 }
